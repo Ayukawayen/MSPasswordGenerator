@@ -19,7 +19,7 @@ function onMasterKeyKeyup(e) {
 	PwGen.setMasterKey(document.querySelector('#masterKey').value);
 };
 function onSiteKeyKeyup(e) {
-	let siteKey = document.querySelector('#siteKey').value;
+	let siteKey = document.querySelector('#siteKey').value.toLowerCase();
 	PwGen.setSiteKey(siteKey);
 };
 function onSizeInput(e) {
